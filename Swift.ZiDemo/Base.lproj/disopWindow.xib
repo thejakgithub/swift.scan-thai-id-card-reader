@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="disopWindow">
+            <connections>
+                <outlet property="ConectReaderBtn" destination="7" id="ERh-gm-TwF"/>
+                <outlet property="DisconectReaderBtn" destination="8" id="RVL-DG-JPx"/>
+                <outlet property="ReadCardBnt" destination="131" id="NMB-Ft-qG3"/>
+                <outlet property="ReadLibInfoBtn" destination="100" id="KZx-EU-Kyg"/>
+                <outlet property="ReadSerialBtn" destination="103" id="hDp-bC-wTd"/>
+                <outlet property="cardState" destination="115" id="116"/>
+                <outlet property="cardState_Latel" destination="117" id="120"/>
+                <outlet property="disResp" destination="58" id="90"/>
+                <outlet property="disTextView" destination="38" id="39"/>
+                <outlet property="mNIDPhotoImgv" destination="A7y-g4-Iuc" id="or4-af-BkL"/>
+                <outlet property="view" destination="1" id="32"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="58">
+                    <rect key="frame" x="10" y="198" width="300" height="232"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="131" userLabel="ReadCard">
+                    <rect key="frame" x="14" y="346" width="140" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="อ่านข้อมูลหน้าบัตร" backgroundImage="ON.png">
+                        <color key="titleColor" red="0.97254908084869385" green="0.17254902422428131" blue="0.11764706671237946" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="OnTouchUpReadCardBtn:" destination="-1" eventType="touchUpInside" id="zz3-6F-bG2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7" userLabel="ConnectReader">
+                    <rect key="frame" x="4" y="53" width="150" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="ติดต่อเครื่องอ่าน" backgroundImage="Get.png">
+                        <color key="titleColor" red="0.99607849120000003" green="0.16862745579999999" blue="0.1098039299" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" red="0.086274512110000007" green="0.1411764771" blue="0.75686281919999998" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="OnConnectReader:" destination="-1" eventType="touchUpInside" id="KVi-gU-T2h"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8" userLabel="DisconnectReader">
+                    <rect key="frame" x="160" y="53" width="150" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="ยกเลิกการติดต่อ" backgroundImage="OFF.png">
+                        <color key="titleColor" red="0.99607849120000003" green="0.16862745579999999" blue="0.1098039299" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="OnDisconnectReader:" destination="-1" eventType="touchUpInside" id="MbD-oS-bHf"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" editable="NO" text="ข้อมูลบัตร" id="38">
+                    <rect key="frame" x="9" y="198" width="197" height="140"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="OP_BG.png" id="53">
+                    <rect key="frame" x="9" y="148" width="301" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" editable="NO" id="65">
+                    <rect key="frame" x="9" y="95" width="300" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ข้อมูลบัตรประชาชน" lineBreakMode="tailTruncation" minimumFontSize="10" id="71">
+                    <rect key="frame" x="13" y="158" width="193" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
+                    <color key="textColor" red="0.97254908080000002" green="0.17254902420000001" blue="0.1176470667" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="100" userLabel="ReadLibInfo">
+                    <rect key="frame" x="160" y="346" width="140" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="อ่านเวอร์ชัน" backgroundImage="ON.png">
+                        <color key="titleColor" red="0.9960784912109375" green="0.16862745583057404" blue="0.1098039299249649" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="OnTouchUpReadLibInfoBtn:" destination="-1" eventType="touchUpInside" id="qTF-nA-yfC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="103" userLabel="ReadSerial">
+                    <rect key="frame" x="14" y="388" width="160" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="อ่านค่าหมายเลขเครื่อง" backgroundImage="ON.png">
+                        <color key="titleColor" red="0.97254908080000002" green="0.17254902420000001" blue="0.1176470667" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="OnTouchUpReadSerialBtn:" destination="-1" eventType="touchUpInside" id="puv-5F-ZSh"/>
+                    </connections>
+                </button>
+                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="115">
+                    <rect key="frame" x="243" y="432" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                </switch>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="สถานะการเสียบบัตร:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="117">
+                    <rect key="frame" x="72" y="428" width="169" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.086274512112140656" green="0.14117647707462311" blue="0.7568628191947937" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="73" userLabel="ExitApp" colorLabel="IBBuiltInLabel-Red">
+                    <rect key="frame" x="244" y="388" width="48" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="contentStretch" x="0.10000000000000001" y="0.10000000000000001" width="1" height="1"/>
+                    <size key="titleShadowOffset" width="2" height="1"/>
+                    <state key="normal" title="Exit" backgroundImage="OP_BG.png">
+                        <color key="titleColor" red="0.99607849120000003" green="0.16862745579999999" blue="0.1098039299" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="OnExitApp" destination="-1" eventType="touchUpInside" id="6fl-VS-uWg"/>
+                    </connections>
+                </button>
+                <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon.png" highlightedImage="Icon.png" id="A7y-g4-Iuc">
+                    <rect key="frame" x="208" y="198" width="104" height="137"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.19607844948768616" blue="0.458823561668396" alpha="1" colorSpace="deviceRGB"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-13" y="199"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Get.png" width="142" height="38"/>
+        <image name="Icon.png" width="57" height="57"/>
+        <image name="OFF.png" width="145" height="38"/>
+        <image name="ON.png" width="145" height="38"/>
+        <image name="OP_BG.png" width="300" height="40"/>
+    </resources>
+</document>

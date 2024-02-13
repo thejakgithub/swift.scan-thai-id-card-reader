@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.updateProgressView(_:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(userInfo[&quot;Percent&quot;] as? Int)">
+            </PersistentString>
+            <PersistentString
+               value = "userInfo[&quot;ArgData&quot;] ">
+            </PersistentString>
+            <PersistentString
+               value = "userInfo[&quot;Percent&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "(userInfo[&quot;NotifyId&quot;] as? String)">
+            </PersistentString>
+            <PersistentString
+               value = "arg as? String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController._getFTSerialNum(hContext:SN:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "n100[0]">
+            </PersistentString>
+            <PersistentString
+               value = "String(validatingUTF8: UnsafePointer&lt;Int8&gt;(buf))">
+            </PersistentString>
+            <PersistentString
+               value = "UnsafePointer&lt;CChar&gt;(buf)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "niosLib.readBornItem():niosLib.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(teamJSON2[0][&quot;bornitem&quot;]) ">
+            </PersistentString>
+            <PersistentString
+               value = "(teamJSON[0][&quot;bornitem&quot;])">
+            </PersistentString>
+            <PersistentString
+               value = "teamJson. count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "connectReaderBleLtUsbBtBtn.titleLabel?.text">
+            </PersistentString>
+            <PersistentString
+               value = "connectReaderBleLtUsbBtBtn">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

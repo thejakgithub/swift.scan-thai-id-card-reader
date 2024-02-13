@@ -1,0 +1,17 @@
+//
+//  BLEZiConfig.xcconfig
+//  ZISample4.01A
+//
+//  Created by Apirak on 14/10/2565 BE.
+//  Copyright © 2565 BE mac. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+IS_APP_NAME = ZiBLE Sample
+IS_APP_VERSION = 4.20
+IS_APP_BUNDLE_ID = ZiBLE.Sample.4.20
+IS_APP_DISPLAY_NAME = ZiBLE 4.20
+IS_APP_BUILD_OPT = BUILD_OPT_CONNECT_BLE
+IS_APP_INFO_PLIST = Swift.ZiDemo/Info_BLE.plist
